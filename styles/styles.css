@@ -1,0 +1,44 @@
+/* Мобильная адаптация */
+.scroll-matrix, .scroll-code, .scroll-img {
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  font-size: 0.9em;
+}
+
+.scroll-img img {
+  max-width: none;
+  height: auto;
+}
+
+.scroll-formula {
+  overflow-x: auto;
+  display: block;
+  max-width: 100%;
+  padding: 0.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.95em;
+  }
+
+  .scroll-matrix, .scroll-code {
+    font-size: 0.85em;
+  }
+
+  h1, h2, h3 {
+    word-break: break-word;
+  }
+}
