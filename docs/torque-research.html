@@ -226,8 +226,122 @@ M_{t} = \mu Q \cdot \frac{1}{3 \sin \tilde{\gamma}} \cdot \frac{a^{3} - d^{3}}{a
 M_{t} = \mu Q \cdot \frac{1}{3} \sqrt{\frac{2}{1 - \cos \gamma}} \frac{a^{3} - d^{3}}{a^{2} - d^{2}}.
 \]</span> Здесь плоский торец соответствует углу <span class="math inline">\(\gamma = 180 \degree\)</span>, при котором подкоренное выражение превращается в единицу, а выражение для момента трения превращается в выражение для момента трения на плоском торце.</p>
 <p>Как несложно заметить, уважаемый Геннадий Борисович, мягко говоря, погорячился.</p>
+</section>
+<section id="экспериментальное-подтверждение" class="level3">
+<h3 class="anchored" data-anchor-id="экспериментальное-подтверждение">Экспериментальное подтверждение</h3>
+<section id="вывод-определяющих-соотношений" class="level4">
+<h4 class="anchored" data-anchor-id="вывод-определяющих-соотношений">Вывод определяющих соотношений</h4>
+<p>Рассмотрим исходное соотношение, которое определяет величину крутящего момента на ключе при затяжке крепежа: <span class="math display">\[
+M_{kl} = M_{p} + M_{t} = Q \cdot \frac{d_{2}}{2} \cdot \frac{\frac{s}{\pi d_{2}} + \mu_{p}}{1 - \mu_{p} \frac{s}{\pi d_{2}}} + \mu Q \cdot \frac{1}{3} \frac{a^{3} - d^{3}}{a^{2} - d^{2}}.
+\]</span></p>
+<p>Так как стоящее в знаменателе слагаемого, характеризующего момент трения в резьбе, произведение <span class="math inline">\(\mu_{p} \frac{s}{\pi d_{2}}\)</span> значительно меньше единицы, можно упростить это соотношение и записать: <span class="math display">\[
+M_{kl} \approx Q \cdot \frac{d_{2}}{2} \cdot \left (\frac{s}{\pi d_{2}} + \mu_{p} \right) + \mu Q \cdot \frac{1}{3} \frac{a^{3} - d^{3}}{a^{2} - d^{2}}.
+\]</span></p>
+<blockquote class="blockquote">
+<p>Убедимся в этом на конкретном примере - оценим величину <span class="math inline">\(\mu_{p} \frac{s}{\pi d_{2}}\)</span> для некоторого винта М8х1, приведённый коэффициент трения в резьбе которого равен <span class="math inline">\(\mu_{p} = 0.173\)</span>: <span class="math display">\[
+\mu_{p} \frac{s}{\pi d_{2}} = 0.173 \cdot \frac{1}{\pi \cdot 7.35} = 0.0075.
+\]</span> Действительно, значительно меньше единицы.</p>
+</blockquote>
+<p>Для большей наглядности обозначим: <span class="math display">\[
+R_{t} = \frac{1}{3} \frac{a^{3} - d^{3}}{a^{2} - d^{2}}.
+\]</span></p>
+<p>Тогда окончательно соотношение для момента затяжки при монтаже крепёжного элемента предстанет в виде: <span class="math display">\[
+M_{kl} = Q \cdot \frac{d_{2}}{2} \cdot \left (\mu_{p} + \frac{s}{\pi d_{2}} \right) + \mu Q \cdot R_{t}.
+\]</span></p>
+<p>Для момента отвинчивания этого соединения справедливо следующее выражение: <span class="math display">\[
+M_{otv} = Q \cdot \frac{d_{2}}{2} \cdot \left (\mu_{p} - \frac{s}{\pi d_{2}} \right) + \mu Q \cdot R_{t}.
+\]</span></p>
+<p>Складывая выражения для моментов завинчивания и отвинчивания, получим: <span class="math display">\[
+M_{kl} + M_{otv} = Q \cdot (d_{2} \mu_{p} + \mu D_{t}),
+\]</span> где <span class="math inline">\(D_{t} = 2R_{t}\)</span>.</p>
+<p>Разность выражений для моментов завинчивания и отвинчивания предстанет в виде: <span class="math display">\[
+M_{kl} - M_{otv} = Q \frac{s}{\pi}.
+\]</span></p>
+<p>Разделив полученную сумму на разность, запишем: <span class="math display">\[
+\frac{M_{kl} + M_{otv}}{M_{kl} - M_{otv}} = \frac{\pi d_{2}}{s} \left(\mu_{p} + \mu \frac{D_{t}}{d_{2}} \right) \Rightarrow
+\]</span> <span class="math display">\[
+\Rightarrow \mu_{p} + \mu \frac{D_{t}}{d_{2}} = \frac{M_{kl} + M_{otv}}{M_{kl} - M_{otv}} \frac{s}{\pi d_{2}}.
+\]</span></p>
+<p>Подставим то, что получилось, в выражение для момента затяжки: <span class="math display">\[
+M_{kl} = Q \cdot \frac{d_{2}}{2} \cdot \left (\mu_{p} + \frac{s}{\pi d_{2}} \right) + \mu Q \cdot \frac{D_{t}}{2} =
+\]</span> <span class="math display">\[
+= \frac{Q d_{2}}{2} \left(\mu_{p} + \frac{s}{\pi d_{2}} + \mu \frac{D_{t}}{d_{2}} \right) = \frac{Q s}{2 \pi} \left (1 + \frac{M_{kl} + M_{otv}}{M_{kl} - M_{otv}} \right) =
+\]</span> <span class="math display">\[
+= Q \frac{s}{\pi} \frac{M_{kl}}{M_{kl} - M_{otv}} = Q \frac{s}{\pi} \frac{1}{1 - \xi},
+\]</span> где <span class="math inline">\(\xi = \frac{M_{otv}}{M_{kl}}\)</span>.</p>
+<p>Отсюда: <span class="math display">\[
+Q = M_{kl} \frac{\pi}{s} (1 - \xi).
+\]</span></p>
+<p>Таким образом, получается соотношение, которое позволяет определить величину усилия затяжки по моментам завинчивания и отвинчивания крепёжного элемента. Это же соотношение приведено у тов. Иосилевича.</p>
+<p>Теперь рассмотрим величину приведённого коэффициента трения в резьбе. Она определяется выражением: <span class="math display">\[
+\mu_{p} = \frac{\mu}{1 - \cos^{2}\beta + \cos^{2}\beta \cdot \cos \frac{\alpha}{2}} \approx \frac{\mu}{\cos\frac{\alpha}{2}} = 1.15 \mu,
+\]</span> где <span class="math inline">\(\beta\)</span> - угол подъёма резьбы, который для резьбы М8х1, например, равен: <span class="math display">\[
+\beta = arctg \frac{s}{\pi d_{2}} = arctg \frac{1}{\pi \cdot 7.35} = 2.48 \degree \Rightarrow \cos\beta = 0.999;
+\]</span> <span class="math inline">\(\alpha\)</span> - угол профиля резьбы, который для метрической резьбы равен <span class="math inline">\(\alpha = 60 \degree\)</span>.</p>
+<p>Стоит отметить, что выражение <span class="math inline">\(\mu_{p} = 1.15 \mu\)</span> (где <span class="math inline">\(\mu\)</span> - коэффициент трения на опорном торце) справедливо, если материалы резьбовой пары идентичны материалам опорного торца.</p>
+<p>Используя эту зависимость можно записать: <span class="math display">\[
+\mu_{p} + \mu \frac{D_{t}}{d_{2}} = \frac{M_{kl} + M_{otv}}{M_{kl} - M_{otv}} \frac{s}{\pi d_{2}} \Rightarrow \mu = \frac{1 + \xi}{1 - \xi} \frac{s}{\pi} \frac{1}{1.15 d_{2} + D_{t}}.
+\]</span></p>
+<p>Тогда моменты трения в резьбе и на опорном торце: <span class="math display">\[
+M_{p} = Q \frac{s}{2 \pi} \left(1 + \frac{1 + \xi}{1 - \xi} \frac{1.15 d_{2}}{1.15 d_{2} + D_{t}} \right),
+\]</span> <span class="math display">\[
+M_{t} = Q \frac{s}{2 \pi} \frac{1 + \xi}{1 - \xi} \frac{D_{t}}{1.15 d_{2} + D_{t}}.
+\]</span></p>
+</section>
+<section id="схема-испытаний" class="level4">
+<h4 class="anchored" data-anchor-id="схема-испытаний">Схема испытаний</h4>
+<p>Имея на руках все определяющие соотношения можно провести следующие испытания:</p>
+<p>1 Схема испытаний первого этапа представлена на рисунке 4. Оснастка включает в себя два металлических бруска и 5 болтов.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Pic_4.png" class="img-fluid figure-img"></p>
+<figcaption>Рисунок 4 - Схема испытаний этапа 1 для определения коэффициента трения взаимодействующих материалов</figcaption>
+</figure>
+</div>
+<p>1.1 Проводим измерения размеров под ключ шляпок болтов и отверстий в верхней пластине. Получаем величины внешних диаметров опорных торцов <span class="math inline">\(a_{bolt}\)</span> и внутренних диаметров опорных торцов <span class="math inline">\(d_{bolt}\)</span>.</p>
+<p>1.2 Проводим затяжку болтов с некоторым моментом затяжки <span class="math inline">\(M_{kl}^{bolt}\)</span> с помощью приличного динамометрического ключа.</p>
+<p>1.3 После выдержки проводим отвинчивание этих болтов с помощью приличного динамометрического ключа и фиксацией моменов отвинивания <span class="math inline">\(M_{otv}^{bolt}\)</span>.</p>
+<p>1.4 Определяем отношение моментов <span class="math display">\[
+\xi_{bolt} = \frac{M_{otv}^{bolt}}{M_{kl}^{bolt}}.
+\]</span></p>
+<p>1.5 Определяем усилие затяжки болтов по формуле <span class="math display">\[
+Q_{bolt} = M_{kl}^{bolt} \frac{\pi}{s} (1 - \xi_{bolt}).
+\]</span></p>
+<p>1.6 Определяем величину коэффициента трения по формуле <span class="math display">\[
+\mu = \frac{1 + \xi_{bolt}}{1 - \xi_{bolt}} \frac{s}{\pi} \frac{1}{1.15 d_{2} + D_{t}^{bolt}},
+\]</span> где <span class="math inline">\(D_{t}^{bolt}\)</span> - приведённый диаметр трения плоского опорного торца, определяемый известным соотношением: <span class="math display">\[
+D_{t}^{bolt} = 2R_{t}^{bolt} = \frac{2}{3} \frac{a_{bolt}^{3} - d_{bolt}^{3}}{a_{bolt}^{2} - d_{bolt}^{2}}.
+\]</span></p>
+<p>2 Схема испытаний второго этапа представлена на рисунке 5. Оснастка включает в себя два металлических бруска и 5 винтов.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Pic_5.png" class="img-fluid figure-img"></p>
+<figcaption>Рисунок 5 - Схема испытаний этапа 2 для определения приведённого диаметра (радиуса) трения конической опорной поверхности</figcaption>
+</figure>
+</div>
+<p>2.1 Проводим измерения диаметров шляпок винтов <span class="math inline">\(a_{vint}\)</span>, представляющих собой внешние диаметры опорных торцов, и внутренних диаметров опорных торцов <span class="math inline">\(d_{vint}\)</span>, а также углы раствора опорных конических поверхностей <span class="math inline">\(\gamma\)</span>.</p>
+<p>2.2 Проводим затяжку винтов с некоторым моментом затяжки <span class="math inline">\(M_{kl}^{vint}\)</span> с помощью приличного динамометрического ключа.</p>
+<p>2.3 После выдержки проводим отвинчивание этих болтов с помощью приличного динамометрического ключа и фиксацией моментов отвинчивания <span class="math inline">\(M_{otv}^{vint}\)</span>.</p>
+<p>2.4 Определяем отношение моментов <span class="math display">\[
+\xi_{vint} = \frac{M_{otv}^{vint}}{M_{kl}^{vint}}.
+\]</span></p>
+<p>2.5 Определяем усилие затяжки винтов по формуле <span class="math display">\[
+Q_{vint} = M_{kl}^{vint} \frac{\pi}{s} (1 - \xi_{vint}).
+\]</span></p>
+<p>2.6 Определяем приведённый диаметр трения конической опорной поверхности по формуле <span class="math display">\[
+D_{t}^{vint} = \frac{1 + \xi_{vint}}{1 - \xi_{vint}} \frac{s}{\pi} \frac{1}{\mu} - 1.15 d_{2}.
+\]</span></p>
+<p>2.7 Определяем теоретический приведённый диаметр трения конической опорной поверхности по формуле <span class="math display">\[
+D_{t}^{theory} = \frac{2}{3} \sqrt{\frac{2}{1 - \cos \gamma}} \frac{a^{3} - d^{3}}{a^{2} - d^{2}}.
+\]</span></p>
+<p>2.8 Сравниваем полученные значения в надежде попасть в 10%-ый диапазон <span class="math display">\[
+\delta = \frac{D_{t}^{theory} - D_{t}^{vint}}{D_{t}^{theory}} \cdot 100%.
+\]</span></p>
+<p>При проведении испытаний на этапах 1 и 2 необходимо предусмотреть одинаковую обработку взаимодействующих поверхностей для минимизации разброса коэффиициента трения.</p>
+<p>Испытания по предложенной двухэтапной схеме позволяют изолировать неизвестные величины (коэффициент трения и приведённый радиус трения конической поверхности), а также обойтись минимальным количеством измерительного борудования: нет необходимости (что, к сожалению, следует из отсутствия возможности) применять тензодатчики и соответствующую измерительную аппаратуру.</p>
 
 
+</section>
 </section>
 </section>
 
